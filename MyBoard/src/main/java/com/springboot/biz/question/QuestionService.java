@@ -11,7 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.springboot.biz.DataNotFoundException;
+import com.springboot.biz.exception.DataNotFoundException;
 import com.springboot.biz.user.SiteUser;
 
 import lombok.RequiredArgsConstructor;
