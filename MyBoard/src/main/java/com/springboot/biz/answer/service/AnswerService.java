@@ -1,7 +1,14 @@
 package com.springboot.biz.answer.service;
 
 import com.springboot.biz.answer.entity.AnswerEntity;
+import com.springboot.biz.answer.dto.RequestAnswer;
+
+import java.util.List;
 
 public interface AnswerService {
-    AnswerEntity getAnswerById(Long id); // 특정 Answer를 ID로 가져오는 메서드 정의
+    List<AnswerEntity> getAllAnswers();
+    AnswerEntity getAnswerById(Integer id);
+    AnswerEntity createAnswer(RequestAnswer requestAnswer);
+    AnswerEntity updateAnswer(Integer id, RequestAnswer requestAnswer);
+    void deleteAnswer(Integer id);
 }
