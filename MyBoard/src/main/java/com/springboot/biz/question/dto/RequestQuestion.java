@@ -1,5 +1,12 @@
 package com.springboot.biz.question.dto;
 
-public class RequestQuestion {
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+public class RequestQuestion {
+    private String title;
+    private String content;
+    private Integer authorId;
 }
